@@ -42,10 +42,9 @@ defprotocol Timex.Protocol do
   Convert a date/time value to a DateTime.
   An optional timezone can be provided, UTC will be assumed if one is not provided.
   """
-  @spec to_datetime(Types.valid_datetime()) :: DateTime.t() | {:error, term}
   @spec to_datetime(Types.valid_datetime(), Types.valid_timezone()) ::
           DateTime.t() | Timex.AmbiguousDateTime.t() | {:error, term}
-  def to_datetime(datetime, timezone \\ :utc)
+  def to_datetime(datetime, timezone)
 
   @doc """
   Convert a date/time value to a NaiveDateTime

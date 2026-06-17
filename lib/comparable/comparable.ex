@@ -81,7 +81,7 @@ defprotocol Timex.Comparable do
       0
   """
   @spec compare(comparable, comparable, granularity) :: compare_result
-  def compare(a, b, granularity \\ :microsecond)
+  def compare(a, b, granularity)
 
   @doc """
   Get the difference between two date or datetime types.
@@ -136,5 +136,5 @@ defprotocol Timex.Comparable do
       0
   """
   @spec diff(comparable, comparable, granularity) :: diff_result
-  def diff(a, b, granularity \\ :microsecond)
+  def diff(a, b, granularity)
 end

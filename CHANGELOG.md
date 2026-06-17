@@ -23,6 +23,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Updated tzdata to fix issues with 2024b
 - Fix deprecation: Module.eval_quoted/4 is deprecated. Use Code.eval_quoted/3 instead
 - Fix deprecation: "min..max inside match is deprecated"
+- Fix deprecation: default arguments in protocol definitions are deprecated in Elixir 1.20 (`Timex.Comparable.compare/3`, `Timex.Comparable.diff/3`, `Timex.Protocol.to_datetime/2`)
 
 ---
 
